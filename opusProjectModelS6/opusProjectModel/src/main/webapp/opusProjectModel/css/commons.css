@@ -1,0 +1,290 @@
+@import url(http://fonts.googleapis.com/css?family=Pontano+Sans);
+
+*{
+	font-family: 'Pontano Sans', sans-serif;;
+}
+
+.main-content{
+	width: 90%;
+	margin: auto;
+}
+
+.error-page, .loading-popup{
+	text-align: center;
+	color: #118855;
+}
+
+.error-page{
+	margin: 200px auto;
+}
+
+.loading-popup{
+	margin: auto;
+	background-color: #ffffff;
+	padding: 20px;
+}
+
+.popup-edit{
+	border-color: #ffffff;
+	padding: 0px 20px 20px 20px;
+	background-color: #ffffff;
+}
+
+li{
+    list-style-type: none;
+}
+
+li.list-group-item, 
+.icon-delete{
+	cursor: pointer;
+}
+
+li.list-group-item.disabled, 
+.icon-delete.disabled {
+	color: #999;
+	cursor: default !important;
+}
+
+.gwt-Frame {
+	border-style: none;
+}
+
+h1, h2, h3, h4{
+	color: #118855;
+}
+
+a, 
+a:visited, 
+a:hover{
+	color: #229955;
+}
+
+.label-default,
+.badge{
+	background-color: #229955;
+}
+
+.btn-default{
+	background-color: #f0f0ee !important;
+	border-color: #d7ddda !important;
+}
+
+.open .btn-default.dropdown-toggle,
+.btn-default:hover, 
+.btn-default:focus{
+	background-color: #e3eae7 !important;
+	border-color: #d7ddda !important;
+}
+
+.btn.dropdown-toggle.selectpicker.btn-default{
+	background-color: #ffffff !important;
+}
+
+.icon-action{
+	background-color: transparent;
+	color: #3f7f5f;
+	border-style: none;
+	cursor: pointer;
+}
+
+.btn-group-vertical .icon-action,
+.btn-group-vertical .label{
+	width: 100%;
+}
+
+.button-group-edit{
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+
+.icon-action:hover,
+.icon-action:focus{
+	background-color: transparent;
+	color: #006633;
+	border-style: none;
+}
+
+.dropdown-menu li a{
+	display: block;
+	padding: 3px 20px;
+	text-decoration: none;
+	white-space: pre-wrap; /* css-3 */    
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */    
+    white-space: -o-pre-wrap; /* Opera 7 */    
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.main-content .navbar-brand{
+	cursor: default !important;
+	margin: 10px;
+	padding: 0px;
+	height: auto;
+}
+
+.main-content .navbar-collapse, 
+.main-content .navbar-header{
+    background-color: #ffffff;
+    padding: 0px;
+}
+
+.main-content .navbar{
+	border-style: none;
+	background-color: #ffffff;
+}
+
+.main-content .navbar-toggle,
+.main-content .navbar-toggle .icon-bar{
+	background-color: #006633;
+}
+
+
+/******************************** BEGIN TILES ********************************/
+/* source : http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/ */
+.tile-container{
+    width: 100%;
+	margin: auto;
+	display: block;
+	padding-top: 25px;
+}
+
+.tile{
+	display: inline-block;
+	margin: 1em;
+	width: 100%;
+    border: none;
+    vertical-align: top;
+}
+
+@media only screen and (max-width : 400px) {
+   /* 1 tile width */
+   .tile {
+		width: 100%;
+   }
+}
+
+@media only screen and (max-width : 1050px) and ()min-width : 401px) {
+   /* 2 tiles width */
+   .tile {
+		width: 45%;
+   }
+}
+
+@media only screen and (max-width : 10000px) and (min-width : 1051px) {
+   /* 3 tiles width */
+   .tile {
+		width: 30%;
+   }
+}
+
+/******************************** END TILES ********************************/
+
+/******************************** BEGIN SIDE LEFT MENU ********************************/
+
+*, *:after, *:before {
+    -moz-box-sizing: border-box;
+}
+
+.side-menu-action {
+	position: fixed;
+	z-index: 1001;
+	font-size: 2em;
+	background-color: #bbddcc;
+}
+
+.side-menu-action a {
+	color: #f2f2f2;
+	padding: 10px;
+}
+
+.side-menu-left.side-menu-action a {
+	display: block;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.side-menu-top.side-menu-action a {
+	display: inline-block;
+	border-left: 1px solid #f2f2f2;
+}
+
+.side-menu-left.side-menu-action {
+	top: 0px;
+}
+
+.side-menu-top.side-menu-action {
+	right: 0px;
+}
+
+.side-menu-left.side-menu-open,
+.side-menu-left.side-menu-action {
+    left: 0px;
+}
+
+.side-menu-top.side-menu-action {
+    top: 0px;
+}
+
+.side-menu-left.side-menu-action.side-menu-open {
+	left: 240px;
+}
+
+.side-menu, 
+.side-menu-action {
+    transition: all 0.3s ease 0s;
+}
+
+.side-menu-left {
+    left: -240px;
+}
+
+.side-menu-vertical {
+    width: 240px;
+    height: 100%;
+    top: 0px;
+    z-index: 1000;
+    background: none repeat scroll 0% 0% #e3eae7;
+}
+
+.side-menu-horizontal {
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    z-index: 999;
+}
+
+.side-menu {
+    position: fixed;
+    overflow: auto;
+}
+
+.side-menu h3 {
+    font-size: 1.9em;
+    margin: 0px;
+    font-weight: 300;
+    background: none repeat scroll 0% 0% #88aa99;
+}
+
+.side-menu h3 a {
+    color: #f2f2f2;
+    overflow: auto;
+}
+
+.side-menu-vertical a {
+    border-bottom: 1px solid #bbddcc;
+    padding: 1em;
+}
+
+.side-menu-horizontal a {
+    border: 1px solid #bbddcc;
+    padding: 0.7em;
+}
+
+.side-menu a {
+    display: block;
+    color: #557766;
+    font-size: 1.1em;
+    font-weight: 300;
+    overflow: auto;
+}
+
+/******************************** END SLIDE LEFT MENU ********************************/

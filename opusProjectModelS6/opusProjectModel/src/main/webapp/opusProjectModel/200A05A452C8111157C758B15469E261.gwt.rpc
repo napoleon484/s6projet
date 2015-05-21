@@ -1,0 +1,106 @@
+@FinalFields, false
+[B, true, true, true, true, [B/3308590456, 3308590456
+ca.uSherbrooke.gegi.commons.core.shared.dispatch.DMLData, false, false, true, true, ca.uSherbrooke.gegi.commons.core.shared.dispatch.DMLData/1460231313, 1460231313
+ca.uSherbrooke.gegi.commons.core.shared.dispatch.DMLData$DMLAction, false, false, true, true, ca.uSherbrooke.gegi.commons.core.shared.dispatch.DMLData$DMLAction/3958001175, 3958001175
+[Lca.uSherbrooke.gegi.commons.core.shared.dispatch.DMLData$DMLAction;, false, false, true, true, [Lca.uSherbrooke.gegi.commons.core.shared.dispatch.DMLData$DMLAction;/446355062, 446355062
+ca.uSherbrooke.gegi.commons.core.shared.dispatch.DMLDataResult, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.dispatch.DMLDataResult/3078836190, 3078836190
+ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetApplicationPrivilegeGroups, false, false, true, true, ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetApplicationPrivilegeGroups/2824076103, 2824076103
+ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetApplicationPrivilegeGroupsResult, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetApplicationPrivilegeGroupsResult/3883556929, 3883556929
+ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetGroups, false, false, true, true, ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetGroups/3544167260, 3544167260
+ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetGroupsResult, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetGroupsResult/3504118680, 3504118680
+ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetParameters, false, false, true, true, ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetParameters/551852667, 551852667
+ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetParametersResult, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetParametersResult/4151683693, 4151683693
+ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetPrivileges, false, false, true, true, ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetPrivileges/2873280276, 2873280276
+ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetPrivilegesResult, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetPrivilegesResult/159273120, 159273120
+ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetProfilePictures, false, false, true, true, ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetProfilePictures/2356555982, 2356555982
+ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetProfilePicturesResult, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetProfilePicturesResult/2001370421, 2001370421
+ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetUsers, false, false, true, true, ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetUsers/696815731, 696815731
+ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetUsersResult, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.dispatch.GetUsersResult/296766073, 296766073
+ca.uSherbrooke.gegi.commons.core.shared.dispatch.Logout, false, false, true, true, ca.uSherbrooke.gegi.commons.core.shared.dispatch.Logout/498565362, 498565362
+ca.uSherbrooke.gegi.commons.core.shared.dispatch.LogoutResult, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.dispatch.LogoutResult/4123793111, 4123793111
+ca.uSherbrooke.gegi.commons.core.shared.entity.AdministratorGroupData, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.entity.AdministratorGroupData/2220319055, 2220319055
+@ClientFields,ca.uSherbrooke.gegi.commons.core.shared.entity.AdministratorGroupData,id,group,administrator,userId
+[Lca.uSherbrooke.gegi.commons.core.shared.entity.AdministratorGroupData;, true, true, true, true, [Lca.uSherbrooke.gegi.commons.core.shared.entity.AdministratorGroupData;/71213318, 71213318
+ca.uSherbrooke.gegi.commons.core.shared.entity.AdministratorGroupPK, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.entity.AdministratorGroupPK/2654262478, 2654262478
+ca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationData, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationData/2510937090, 2510937090
+@ClientFields,ca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationData,applicationId,url,label,description,userId,icon,registration
+[Lca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationData;, true, true, true, true, [Lca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationData;/2261803247, 2261803247
+ca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationPrivilegeData, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationPrivilegeData/3019050180, 3019050180
+@ClientFields,ca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationPrivilegeData,id,description,userId,application,privilege
+[Lca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationPrivilegeData;, true, true, true, true, [Lca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationPrivilegeData;/3224070657, 3224070657
+ca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationPrivilegeGroupData, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationPrivilegeGroupData/3930678940, 3930678940
+@ClientFields,ca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationPrivilegeGroupData,id,userId,registration,applicationPrivilege,group
+[Lca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationPrivilegeGroupData;, true, true, true, true, [Lca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationPrivilegeGroupData;/4085163821, 4085163821
+ca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationPrivilegeGroupPK, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationPrivilegeGroupPK/1877190263, 1877190263
+ca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationPrivilegePK, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationPrivilegePK/263503099, 263503099
+[Lca.uSherbrooke.gegi.commons.core.shared.entity.Data;, true, true, true, true, [Lca.uSherbrooke.gegi.commons.core.shared.entity.Data;/2853431666, 2853431666
+ca.uSherbrooke.gegi.commons.core.shared.entity.GroupData, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.entity.GroupData/2918311767, 2918311767
+@ClientFields,ca.uSherbrooke.gegi.commons.core.shared.entity.GroupData,groupId,label,description,uniqueLabel,userId,registration
+[Lca.uSherbrooke.gegi.commons.core.shared.entity.GroupData;, true, true, true, true, [Lca.uSherbrooke.gegi.commons.core.shared.entity.GroupData;/2447583672, 2447583672
+ca.uSherbrooke.gegi.commons.core.shared.entity.GroupGroupData, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.entity.GroupGroupData/3170775094, 3170775094
+@ClientFields,ca.uSherbrooke.gegi.commons.core.shared.entity.GroupGroupData,id,group,parent,userId
+[Lca.uSherbrooke.gegi.commons.core.shared.entity.GroupGroupData;, true, true, true, true, [Lca.uSherbrooke.gegi.commons.core.shared.entity.GroupGroupData;/2159362070, 2159362070
+ca.uSherbrooke.gegi.commons.core.shared.entity.GroupGroupPK, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.entity.GroupGroupPK/3547017813, 3547017813
+ca.uSherbrooke.gegi.commons.core.shared.entity.ParameterData, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.entity.ParameterData/2239458451, 2239458451
+@ClientFields,ca.uSherbrooke.gegi.commons.core.shared.entity.ParameterData,id,parameterValue,userId,application
+[Lca.uSherbrooke.gegi.commons.core.shared.entity.ParameterData;, true, true, true, true, [Lca.uSherbrooke.gegi.commons.core.shared.entity.ParameterData;/1201689239, 1201689239
+ca.uSherbrooke.gegi.commons.core.shared.entity.ParameterPK, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.entity.ParameterPK/1386840075, 1386840075
+ca.uSherbrooke.gegi.commons.core.shared.entity.PrivilegeData, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.entity.PrivilegeData/3246503788, 3246503788
+@ClientFields,ca.uSherbrooke.gegi.commons.core.shared.entity.PrivilegeData,privilegeId,label,description,userId
+[Lca.uSherbrooke.gegi.commons.core.shared.entity.PrivilegeData;, true, true, true, true, [Lca.uSherbrooke.gegi.commons.core.shared.entity.PrivilegeData;/3915101305, 3915101305
+ca.uSherbrooke.gegi.commons.core.shared.entity.ProfilePictureData, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.entity.ProfilePictureData/3393099643, 3393099643
+@ClientFields,ca.uSherbrooke.gegi.commons.core.shared.entity.ProfilePictureData,userId,image,icon,userAgreement,administratorUserId,administratorApproval,imageUrlOnServer
+[Lca.uSherbrooke.gegi.commons.core.shared.entity.ProfilePictureData;, true, true, true, true, [Lca.uSherbrooke.gegi.commons.core.shared.entity.ProfilePictureData;/620641917, 620641917
+ca.uSherbrooke.gegi.commons.core.shared.entity.UserData, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.entity.UserData/943381790, 943381790
+@ClientFields,ca.uSherbrooke.gegi.commons.core.shared.entity.UserData,userId,administrativeUserId,firstName,lastName,emailAddress,lastLogin,profilePicture
+[Lca.uSherbrooke.gegi.commons.core.shared.entity.UserData;, true, true, true, true, [Lca.uSherbrooke.gegi.commons.core.shared.entity.UserData;/3725925040, 3725925040
+ca.uSherbrooke.gegi.commons.core.shared.entity.UserGroupData, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.entity.UserGroupData/3467847416, 3467847416
+@ClientFields,ca.uSherbrooke.gegi.commons.core.shared.entity.UserGroupData,id,member,group,userId
+[Lca.uSherbrooke.gegi.commons.core.shared.entity.UserGroupData;, true, true, true, true, [Lca.uSherbrooke.gegi.commons.core.shared.entity.UserGroupData;/3041999048, 3041999048
+ca.uSherbrooke.gegi.commons.core.shared.entity.UserGroupPK, true, true, true, true, ca.uSherbrooke.gegi.commons.core.shared.entity.UserGroupPK/2133236147, 2133236147
+com.google.gwt.i18n.shared.impl.DateRecord, true, true, true, true, com.google.gwt.i18n.shared.impl.DateRecord/3173882066, 3173882066
+com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException, true, true, true, true, com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException/3936916533, 3936916533
+com.google.gwt.user.client.rpc.RpcTokenException, true, true, false, false, com.google.gwt.user.client.rpc.RpcTokenException/2345075298, 2345075298
+com.google.gwt.user.client.rpc.XsrfToken, false, false, true, true, com.google.gwt.user.client.rpc.XsrfToken/4254043109, 4254043109
+com.google.gwt.user.client.ui.ChangeListenerCollection, true, true, true, true, com.google.gwt.user.client.ui.ChangeListenerCollection/287642957, 287642957
+com.google.gwt.user.client.ui.ClickListenerCollection, true, true, true, true, com.google.gwt.user.client.ui.ClickListenerCollection/2152455986, 2152455986
+com.google.gwt.user.client.ui.FocusListenerCollection, true, true, true, true, com.google.gwt.user.client.ui.FocusListenerCollection/119490835, 119490835
+com.google.gwt.user.client.ui.FormHandlerCollection, true, true, true, true, com.google.gwt.user.client.ui.FormHandlerCollection/3088681894, 3088681894
+com.google.gwt.user.client.ui.KeyboardListenerCollection, true, true, true, true, com.google.gwt.user.client.ui.KeyboardListenerCollection/1040442242, 1040442242
+com.google.gwt.user.client.ui.LoadListenerCollection, true, true, true, true, com.google.gwt.user.client.ui.LoadListenerCollection/3174178888, 3174178888
+com.google.gwt.user.client.ui.MouseListenerCollection, true, true, true, true, com.google.gwt.user.client.ui.MouseListenerCollection/465158911, 465158911
+com.google.gwt.user.client.ui.MouseWheelListenerCollection, true, true, true, true, com.google.gwt.user.client.ui.MouseWheelListenerCollection/370304552, 370304552
+com.google.gwt.user.client.ui.PopupListenerCollection, true, true, true, true, com.google.gwt.user.client.ui.PopupListenerCollection/1920131050, 1920131050
+com.google.gwt.user.client.ui.ScrollListenerCollection, true, true, true, true, com.google.gwt.user.client.ui.ScrollListenerCollection/210686268, 210686268
+com.google.gwt.user.client.ui.TabListenerCollection, true, true, true, true, com.google.gwt.user.client.ui.TabListenerCollection/3768293299, 3768293299
+com.google.gwt.user.client.ui.TableListenerCollection, true, true, true, true, com.google.gwt.user.client.ui.TableListenerCollection/2254740473, 2254740473
+com.google.gwt.user.client.ui.TreeListenerCollection, true, true, true, true, com.google.gwt.user.client.ui.TreeListenerCollection/3716243734, 3716243734
+com.gwtplatform.dispatch.rpc.shared.ActionImpl, false, false, true, true, com.gwtplatform.dispatch.rpc.shared.ActionImpl/809952034, 809952034
+com.gwtplatform.dispatch.rpc.shared.BatchResult, true, true, true, true, com.gwtplatform.dispatch.rpc.shared.BatchResult/1124326542, 1124326542
+com.gwtplatform.dispatch.rpc.shared.DispatchService, false, false, false, false, _, 2972127680
+com.gwtplatform.dispatch.rpc.shared.MultipleResult, true, true, true, true, com.gwtplatform.dispatch.rpc.shared.MultipleResult/3717655381, 3717655381
+com.gwtplatform.dispatch.rpc.shared.NoResult, true, true, true, true, com.gwtplatform.dispatch.rpc.shared.NoResult/1692581133, 1692581133
+com.gwtplatform.dispatch.rpc.shared.ServiceException, true, true, false, false, com.gwtplatform.dispatch.rpc.shared.ServiceException/3931594900, 3931594900
+com.gwtplatform.dispatch.rpc.shared.UnsecuredActionImpl, false, false, true, true, com.gwtplatform.dispatch.rpc.shared.UnsecuredActionImpl/412053526, 412053526
+com.gwtplatform.dispatch.rpc.shared.UnsupportedActionException, true, true, false, false, com.gwtplatform.dispatch.rpc.shared.UnsupportedActionException/1628260723, 1628260723
+com.gwtplatform.dispatch.shared.ActionException, true, true, false, false, com.gwtplatform.dispatch.shared.ActionException/2451163915, 2451163915
+java.lang.Boolean, true, true, true, true, java.lang.Boolean/476441737, 476441737
+java.lang.Exception, true, false, true, false, java.lang.Exception/1920171873, 1920171873
+java.lang.Integer, true, true, true, true, java.lang.Integer/3438268394, 3438268394
+[Ljava.lang.Integer;, false, false, true, true, [Ljava.lang.Integer;/1574882222, 1574882222
+java.lang.Long, true, true, true, true, java.lang.Long/4227064769, 4227064769
+java.lang.Number, true, false, true, false, java.lang.Number/300033342, 300033342
+java.lang.RuntimeException, true, false, true, false, java.lang.RuntimeException/515124647, 515124647
+java.lang.String, true, true, true, true, java.lang.String/2004016611, 2004016611
+java.lang.Throwable, true, false, true, false, java.lang.Throwable/2953622131, 2953622131
+java.sql.Date, true, true, true, true, java.sql.Date/730999118, 730999118
+java.sql.Time, true, true, true, true, java.sql.Time/1816797103, 1816797103
+java.sql.Timestamp, true, true, true, true, java.sql.Timestamp/3040052672, 3040052672
+java.util.ArrayList, true, true, true, true, java.util.ArrayList/4159755760, 4159755760
+java.util.Arrays$ArrayList, true, true, true, true, java.util.Arrays$ArrayList/2507071751, 2507071751
+java.util.Collections$EmptyList, true, true, true, true, java.util.Collections$EmptyList/4157118744, 4157118744
+java.util.Collections$SingletonList, true, true, true, true, java.util.Collections$SingletonList/1586180994, 1586180994
+java.util.Date, true, true, true, true, java.util.Date/3385151746, 3385151746
+java.util.LinkedList, true, true, true, true, java.util.LinkedList/3953877921, 3953877921
+java.util.Stack, true, true, true, true, java.util.Stack/1346942793, 1346942793
+java.util.Vector, true, true, true, true, java.util.Vector/3057315478, 3057315478

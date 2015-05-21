@@ -1,0 +1,55 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+	<persistence-unit name="opusProjectModel" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		
+		<class>ca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationData</class>
+		<class>ca.uSherbrooke.gegi.commons.core.shared.entity.PrivilegeData</class>
+		<class>ca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationPrivilegeData</class>
+		<class>ca.uSherbrooke.gegi.commons.core.shared.entity.ApplicationPrivilegeGroupData</class>
+		<class>ca.uSherbrooke.gegi.commons.core.shared.entity.ParameterData</class>
+		<class>ca.uSherbrooke.gegi.commons.core.shared.entity.UserData</class>
+		<class>ca.uSherbrooke.gegi.commons.core.shared.entity.ProfilePictureData</class>
+		<class>ca.uSherbrooke.gegi.commons.core.shared.entity.GroupData</class>
+		<class>ca.uSherbrooke.gegi.commons.core.shared.entity.UserGroupData</class>
+		<class>ca.uSherbrooke.gegi.commons.core.shared.entity.GroupGroupData</class>
+		<class>ca.uSherbrooke.gegi.commons.core.shared.entity.AdministratorGroupData</class>
+
+		<properties>
+			<!-- Disable the second-level cache -->
+			<property name="eclipselink.cache.shared.default" value="false" /> <!-- important pour refresh data -->
+			<property name="eclipselink.target-database" value="PostgreSQL" />
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/opus" />
+			<property name="javax.persistence.jdbc.user" value="postgres" />
+			<property name="javax.persistence.jdbc.password" value="postgres" />
+			<property name="eclipselink.ddl-generation" value="none" />
+			<property name="eclipselink.logging.level" value="FINE" />
+			<property name="eclipselink.show-sql" value="true" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+
+			<property name="databasePlatform"
+				value="eclipselink.platform.database.PostgreSQLPlatform" />
+			<property name="generateDdl" value="false" />
+
+
+			<property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider" />
+
+			<!-- Default is false for backwards compatibility. Should be used on all 
+				new projects -->
+			<property name="hibernate.id.new_generator_mappings" value="true" />
+			<property name="eclipselink.cache.shared.default" value="false" />
+			<property name="eclipselink.cache.shared.Trimestre" value="false" />
+
+			<property name="eclipselink.query-results-cache" value="false"/>
+			<property name="eclipselink.refresh" value="true"/>
+			
+			<property name="eclipselink.jdbc.cache-statements" value="false"/>
+			
+		</properties>
+	</persistence-unit>
+
+</persistence>
+
