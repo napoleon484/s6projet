@@ -15,7 +15,7 @@
     
     <context-param>
     	<param-name>applicationId</param-name>
-    	<param-value>3</param-value>
+    	<param-value>1</param-value>
 	</context-param>
 	
 	<filter>

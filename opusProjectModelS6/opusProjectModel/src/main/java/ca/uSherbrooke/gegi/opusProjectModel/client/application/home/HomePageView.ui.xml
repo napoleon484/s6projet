@@ -3,6 +3,6 @@
              xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
              
     <g:HTMLPanel styleName="main-content">
-    	<b:PageHeader text="Hello World!" subText="Opus" />
+    	<b:PageHeader text="Visualisation du cheminement!"/>
     </g:HTMLPanel>
 </ui:UiBinder>
