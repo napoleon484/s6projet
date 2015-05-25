@@ -1,4 +1,49 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
-    <g:SimplePanel ui:field="main"/>
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+    <g:VerticalPanel ui:field="mainVertical"> 
+		<g:HTMLPanel styleName="main-content">
+    		<b:PageHeader text="Visualisation du cheminement!"/>
+   	 	</g:HTMLPanel>
+	    <g:MenuBar ui:field="menuBar" animationEnabled="true" autoOpen="true">
+	    	<g:MenuItem text="Accueil" ui:field="btnHome" />
+		    <g:MenuItem text="Cheminement" ui:field="btnProfile">
+			    <g:MenuBar vertical="true">
+			        <g:MenuItem text="S1" ui:field="btnS1"/>
+			        <g:MenuItem text="S2" ui:field="btnS2"/>
+			        <g:MenuItem text="S3" ui:field="btnS3"/>
+			        <g:MenuItem text="S4" ui:field="btnS4"/>
+			        <g:MenuItem text="S5" ui:field="btnS5"/>
+			        <g:MenuItem text="S6" ui:field="btnS6"/>
+			        <g:MenuItem text="S7" ui:field="btnS7"/>
+			        <g:MenuItem text="S8" ui:field="btnS8"/>
+			    </g:MenuBar>
+		    </g:MenuItem>
+		    <g:MenuItem text="Qualité" ui:field="btnAccount">
+			    <g:MenuBar vertical="true">
+			        <g:MenuItem text="Qualité 1" ui:field="btnQualite1"/>
+			        <g:MenuItem text="Qualité 2" ui:field="btnQualite2"/>
+			        <g:MenuItem text="Qualité 3" ui:field="btnQualite3"/>
+			        <g:MenuItem text="Qualité 4" ui:field="btnQualite4"/>
+			        <g:MenuItem text="Qualité 5" ui:field="btnQualite5"/>
+			        <g:MenuItem text="Qualité 6" ui:field="btnQualite6"/>
+			        <g:MenuItem text="Qualité 7" ui:field="btnQualite7"/>
+			        <g:MenuItem text="Qualité 8" ui:field="btnQualite8"/>
+			        <g:MenuItem text="Qualité 9" ui:field="btnQualite9"/>
+			        <g:MenuItem text="Qualité 10" ui:field="btnQualite10"/>
+			        <g:MenuItem text="Qualité 11" ui:field="btnQualite11"/>
+			        <g:MenuItem text="Qualité 12" ui:field="btnQualite12"/>
+			    </g:MenuBar>
+		    </g:MenuItem>
+		    <g:MenuItem text="Profil" ui:field="btnProfil">
+			    <g:MenuBar vertical="true">
+			        <g:MenuItem text="View" ui:field="btnViewProfil"/>
+			        <g:MenuItem text="Edit" ui:field="btnEditProfil"/>
+			    </g:MenuBar>
+		    </g:MenuItem>
+	    </g:MenuBar>
+	    <g:HorizontalPanel>
+	        
+	    </g:HorizontalPanel>
+    </g:VerticalPanel>
 </ui:UiBinder>
