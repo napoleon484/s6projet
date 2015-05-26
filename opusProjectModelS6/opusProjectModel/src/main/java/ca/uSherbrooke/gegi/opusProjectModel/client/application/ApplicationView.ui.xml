@@ -42,8 +42,6 @@
 			    </g:MenuBar>
 		    </g:MenuItem>
 	    </g:MenuBar>
-	    <g:HorizontalPanel>
-	        
-	    </g:HorizontalPanel>
+	    <g:HorizontalPanel ui:field="SelectedItemPanel"> </g:HorizontalPanel>
     </g:VerticalPanel>
 </ui:UiBinder>
