@@ -42,6 +42,14 @@
 			    </g:MenuBar>
 		    </g:MenuItem>
 	    </g:MenuBar>
-	    <g:HorizontalPanel ui:field="SelectedItemPanel"> </g:HorizontalPanel>
+	    <g:HorizontalPanel>
+        	<g:VerticalPanel ui:field="SubMenuBarPanel">
+	        	<g:HTMLPanel ui:field="SubMenuBarTitle" tag="h3"></g:HTMLPanel>
+        	    <g:DecoratorPanel>
+            	<g:MenuBar ui:field="SubMenuBar" vertical="true"></g:MenuBar>
+		    	</g:DecoratorPanel>
+        	</g:VerticalPanel>
+	       	<g:VerticalPanel ui:field="SelectedItemPanel"></g:VerticalPanel>
+	    </g:HorizontalPanel>
     </g:VerticalPanel>
 </ui:UiBinder>
