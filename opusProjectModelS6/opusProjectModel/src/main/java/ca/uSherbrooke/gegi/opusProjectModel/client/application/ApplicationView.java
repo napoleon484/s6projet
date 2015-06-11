@@ -2,28 +2,20 @@ package ca.uSherbrooke.gegi.opusProjectModel.client.application;
 
 import javax.inject.Inject;
 
+import ca.uSherbrooke.gegi.opusProjectModel.shared.dispatch.MenuResult;
+
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
-import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.uibinder.client.UiHandler;
-import com.google.gwt.user.client.Command;
-import com.google.gwt.user.client.ui.DecoratorPanel;
-import com.google.gwt.user.client.ui.DialogBox;
 import com.google.gwt.user.client.ui.HTMLPanel;
-import com.google.gwt.user.client.ui.HeaderPanel;
-import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.IsWidget;
-import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.MenuBar;
 import com.google.gwt.user.client.ui.MenuItem;
-import com.google.gwt.user.client.ui.RootLayoutPanel;
-import com.google.gwt.user.client.ui.SplitLayoutPanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.gwtplatform.mvp.client.ViewImpl;
+import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 
-class ApplicationView extends ViewImpl implements ApplicationPresenter.MyView {
+class ApplicationView extends ViewWithUiHandlers<ApplicationUiHandlers> implements ApplicationPresenter.MyView {
     interface Binder extends UiBinder<Widget, ApplicationView> {
     }
 
@@ -33,16 +25,7 @@ class ApplicationView extends ViewImpl implements ApplicationPresenter.MyView {
     @UiField MenuBar SubMenuBar;
     @UiField VerticalPanel SubMenuBarPanel;
     @UiField HTMLPanel SubMenuBarTitle;
-    
-    // Item 
-    @UiField MenuItem btnS1;
-    @UiField MenuItem btnS2;
-    @UiField MenuItem btnS3;
-    @UiField MenuItem btnS4;
-    @UiField MenuItem btnS5;
-    @UiField MenuItem btnS6;
-    @UiField MenuItem btnS7;
-    @UiField MenuItem btnS8;
+    @UiField MenuBar SessionMenu;
     
     @UiField MenuItem btnQualite1;
     @UiField MenuItem btnQualite2;
@@ -128,21 +111,22 @@ class ApplicationView extends ViewImpl implements ApplicationPresenter.MyView {
     	  }
     }
     
+    public void CreateMenuItems(MenuResult menuResult)
+    {
+    	for(String sessionName : menuResult.sessionsName)
+    	{
+        	SessionMenu.addItem(new MenuItem(sessionName, new SessionMenuCommand(sessionName)));
+    	}
+    }
+    
+    
+    
     @Inject
-    ApplicationView(Binder uiBinder) {
+    ApplicationView(Binder uiBinder) 
+    {
         initWidget(uiBinder.createAndBindUi(this));
         mainVertical.setWidth("100%");
         SubMenuBarPanel.setVisible(false);
-        
-        // Add Events to Buttons
-        btnS1.setScheduledCommand(new SessionMenuCommand(btnS1.getText()));
-        btnS2.setScheduledCommand(new SessionMenuCommand(btnS2.getText()));
-        btnS3.setScheduledCommand(new SessionMenuCommand(btnS3.getText()));
-        btnS4.setScheduledCommand(new SessionMenuCommand(btnS4.getText()));
-        btnS5.setScheduledCommand(new SessionMenuCommand(btnS5.getText()));
-        btnS6.setScheduledCommand(new SessionMenuCommand(btnS6.getText()));
-        btnS7.setScheduledCommand(new SessionMenuCommand(btnS7.getText()));
-        btnS8.setScheduledCommand(new SessionMenuCommand(btnS8.getText()));
         
         btnQualite1.setScheduledCommand(new QualiteMenuCommand(btnQualite1.getText()));
         btnQualite2.setScheduledCommand(new QualiteMenuCommand(btnQualite2.getText()));
@@ -161,7 +145,6 @@ class ApplicationView extends ViewImpl implements ApplicationPresenter.MyView {
     @Override
     public void setInSlot(Object slot, IsWidget content) {
         if (slot == ApplicationPresenter.SLOT_SetMainContent) {
-//        	mainVertical.setWidget(content);
         } else {
             super.setInSlot(slot, content);
         }
