@@ -8,15 +8,7 @@
 	    <g:MenuBar ui:field="menuBar" animationEnabled="true" autoOpen="true">
 	    	<g:MenuItem text="Accueil" ui:field="btnHome" />
 		    <g:MenuItem text="Cheminement" ui:field="btnProfile">
-			    <g:MenuBar vertical="true">
-			        <g:MenuItem text="S1" ui:field="btnS1"/>
-			        <g:MenuItem text="S2" ui:field="btnS2"/>
-			        <g:MenuItem text="S3" ui:field="btnS3"/>
-			        <g:MenuItem text="S4" ui:field="btnS4"/>
-			        <g:MenuItem text="S5" ui:field="btnS5"/>
-			        <g:MenuItem text="S6" ui:field="btnS6"/>
-			        <g:MenuItem text="S7" ui:field="btnS7"/>
-			        <g:MenuItem text="S8" ui:field="btnS8"/>
+			    <g:MenuBar vertical="true" ui:field="SessionMenu">
 			    </g:MenuBar>
 		    </g:MenuItem>
 		    <g:MenuItem text="Qualité" ui:field="btnAccount">
