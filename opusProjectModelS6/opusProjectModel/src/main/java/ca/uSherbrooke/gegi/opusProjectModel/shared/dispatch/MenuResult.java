@@ -6,4 +6,5 @@ import com.gwtplatform.dispatch.rpc.shared.Result;
 
 public class MenuResult implements Result {
 	public ArrayList<String> sessionsName = new ArrayList<String>();
+	public ArrayList<String> QualityName = new ArrayList<String>();
 }

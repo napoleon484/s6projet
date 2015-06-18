@@ -12,19 +12,7 @@
 			    </g:MenuBar>
 		    </g:MenuItem>
 		    <g:MenuItem text="Qualité" ui:field="btnAccount">
-			    <g:MenuBar vertical="true">
-			        <g:MenuItem text="Qualité 1" ui:field="btnQualite1"/>
-			        <g:MenuItem text="Qualité 2" ui:field="btnQualite2"/>
-			        <g:MenuItem text="Qualité 3" ui:field="btnQualite3"/>
-			        <g:MenuItem text="Qualité 4" ui:field="btnQualite4"/>
-			        <g:MenuItem text="Qualité 5" ui:field="btnQualite5"/>
-			        <g:MenuItem text="Qualité 6" ui:field="btnQualite6"/>
-			        <g:MenuItem text="Qualité 7" ui:field="btnQualite7"/>
-			        <g:MenuItem text="Qualité 8" ui:field="btnQualite8"/>
-			        <g:MenuItem text="Qualité 9" ui:field="btnQualite9"/>
-			        <g:MenuItem text="Qualité 10" ui:field="btnQualite10"/>
-			        <g:MenuItem text="Qualité 11" ui:field="btnQualite11"/>
-			        <g:MenuItem text="Qualité 12" ui:field="btnQualite12"/>
+			    <g:MenuBar vertical="true" ui:field="QualityMenu">
 			    </g:MenuBar>
 		    </g:MenuItem>
 		    <g:MenuItem text="Profil" ui:field="btnProfil">

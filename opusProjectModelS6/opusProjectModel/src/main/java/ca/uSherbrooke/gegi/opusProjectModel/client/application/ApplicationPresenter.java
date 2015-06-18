@@ -4,6 +4,8 @@ import java.util.logging.Logger;
 
 import javax.inject.Inject;
 
+import ca.uSherbrooke.gegi.opusProjectModel.shared.dispatch.CoursAction;
+import ca.uSherbrooke.gegi.opusProjectModel.shared.dispatch.CoursResult;
 import ca.uSherbrooke.gegi.opusProjectModel.shared.dispatch.MenuAction;
 import ca.uSherbrooke.gegi.opusProjectModel.shared.dispatch.MenuResult;
 
@@ -24,6 +26,7 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
     interface MyView extends View, HasUiHandlers<ApplicationUiHandlers> 
     {
     	public void CreateMenuItems(MenuResult result);
+    	public void CreateSessionSubMenu(CoursResult result);
     }
 
 	DispatchAsync dispatcher;
@@ -76,4 +79,23 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
 		});
 		
     }
+
+	@Override
+	public void GetCoursItem(String patate) {
+		CoursAction coursAction = new CoursAction();
+		dispatcher.execute(coursAction, new AsyncCallback<CoursResult>() {
+			@Override
+			public void onSuccess(CoursResult result) {
+				Logger logger = Logger.getLogger("Log variable");
+				logger.log(java.util.logging.Level.SEVERE, "Menu type ");
+				getView().CreateSessionSubMenu(result);
+			}
+			
+			@Override
+			public void onFailure(Throwable caught) {
+				Logger logger = java.util.logging.Logger.getLogger("Error Log variable");
+				logger.log(java.util.logging.Level.SEVERE, "Local choisi probleme");
+			}
+		});
+	}
 }
