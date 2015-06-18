@@ -4,5 +4,5 @@ import com.gwtplatform.mvp.client.UiHandlers;
 
 public interface ApplicationUiHandlers extends UiHandlers{
 	public void GetMenuItems();
-	public void GetCoursItem(String swageligious);
+	public void GetCoursItem(String item);
 }

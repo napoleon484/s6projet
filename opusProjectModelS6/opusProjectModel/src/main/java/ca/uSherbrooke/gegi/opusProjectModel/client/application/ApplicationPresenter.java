@@ -81,7 +81,7 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
     }
 
 	@Override
-	public void GetCoursItem(String patate) {
+	public void GetCoursItem(String item) {
 		CoursAction coursAction = new CoursAction();
 		dispatcher.execute(coursAction, new AsyncCallback<CoursResult>() {
 			@Override
